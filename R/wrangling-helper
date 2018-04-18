@@ -1,0 +1,7 @@
+
+
+
+replace_na <- function(x, replace_with=""){
+  x[is.na(x)] <- replace_with
+  x
+}
