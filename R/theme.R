@@ -2,11 +2,9 @@
 
 #' @export
 theme_blog <- function(background=FALSE, ...) {
-  
-  require(ggplot2)
-  
+
   theme_ <- theme_minimal()
-  
+
   if (background){
     theme_ <- theme_ +
       theme(
@@ -15,7 +13,7 @@ theme_blog <- function(background=FALSE, ...) {
         legend.background = element_rect(fill = "#f6f1ed", color = NA)
       )
   }
-  
+
   theme_ +
     theme(
       text = element_text(family = "Source Sans Pro", color = "#173e43", size=12),
